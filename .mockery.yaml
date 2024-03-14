@@ -1,0 +1,8 @@
+with-expecter: true
+packages:
+  github.com/crowdigit/exec:
+    config:
+      dir: mocks
+    interfaces:
+      Command:
+      CommandProvider:
