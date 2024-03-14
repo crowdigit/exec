@@ -1,4 +1,4 @@
-module github.com/crowdigit/exec/v0
+module github.com/crowdigit/exec
 
 go 1.22.1
 
