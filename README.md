@@ -1,6 +1,8 @@
 # crowdigit/exec
 
-[![Go Reference](https://pkg.go.dev/badge/github.com/crowdigit/exec.svg)](https://pkg.go.dev/github.com/crowdigit/exec) Wrapper library for `os/exec` with utilities.
+[![Go Reference](https://pkg.go.dev/badge/github.com/crowdigit/exec.svg)](https://pkg.go.dev/github.com/crowdigit/exec)
+
+Wrapper library for `os/exec` with utilities.
 
 ## Usage
 
