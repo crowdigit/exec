@@ -78,6 +78,51 @@ func (_c *MockCommand_Output_Call) RunAndReturn(run func() ([]byte, error)) *Moc
 	return _c
 }
 
+// Path provides a mock function with given fields:
+func (_m *MockCommand) Path() string {
+	ret := _m.Called()
+
+	if len(ret) == 0 {
+		panic("no return value specified for Path")
+	}
+
+	var r0 string
+	if rf, ok := ret.Get(0).(func() string); ok {
+		r0 = rf()
+	} else {
+		r0 = ret.Get(0).(string)
+	}
+
+	return r0
+}
+
+// MockCommand_Path_Call is a *mock.Call that shadows Run/Return methods with type explicit version for method 'Path'
+type MockCommand_Path_Call struct {
+	*mock.Call
+}
+
+// Path is a helper method to define mock.On call
+func (_e *MockCommand_Expecter) Path() *MockCommand_Path_Call {
+	return &MockCommand_Path_Call{Call: _e.mock.On("Path")}
+}
+
+func (_c *MockCommand_Path_Call) Run(run func()) *MockCommand_Path_Call {
+	_c.Call.Run(func(args mock.Arguments) {
+		run()
+	})
+	return _c
+}
+
+func (_c *MockCommand_Path_Call) Return(_a0 string) *MockCommand_Path_Call {
+	_c.Call.Return(_a0)
+	return _c
+}
+
+func (_c *MockCommand_Path_Call) RunAndReturn(run func() string) *MockCommand_Path_Call {
+	_c.Call.Return(run)
+	return _c
+}
+
 // Run provides a mock function with given fields:
 func (_m *MockCommand) Run() error {
 	ret := _m.Called()

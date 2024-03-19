@@ -16,8 +16,14 @@ type Command interface {
 	StdinPipe() (io.WriteCloser, error)
 	StdoutPipe() (io.ReadCloser, error)
 	StderrPipe() (io.ReadCloser, error)
+
+	Path() string
 }
 
 type commandImpl struct {
 	*exec.Cmd
+}
+
+func (c commandImpl) Path() string {
+	return c.Cmd.Path
 }
